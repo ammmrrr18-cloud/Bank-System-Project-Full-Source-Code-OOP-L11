@@ -45,7 +45,7 @@ public:
             AccountNumber = clsInputValidate::ReadString();
         }
 
-        clsBankClient Client1 = clsBankClient::Find("A122");
+        clsBankClient Client1 = clsBankClient::Find(AccountNumber);
 
         if (!Client1.IsEmpty())
         {
